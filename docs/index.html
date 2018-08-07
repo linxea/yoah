@@ -22,6 +22,16 @@
 
 <body>
   <div id="square"></div>
+  <script>
+    window.addEventListener("deviceorientation", function (event) {
+      const element = document.getElementById("square");
+
+      element.style.transform =
+        "rotateZ(" + (event.alpha - 180) + "deg) " +
+        "rotateX(" + event.beta + "deg) " +
+        "rotateY(" + (-event.gamma) + "deg)";
+    });
+  </script>
 </body>
 
 </html>
