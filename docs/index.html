@@ -28,12 +28,12 @@
       const element = document.getElementById("square");
 
       element.style.transform =
-        "rotateZ(" + (event.alpha - 180) + "deg) " +
+        "rotateZ(" + (event.alpha) + "deg) " +
         "rotateX(" + event.beta + "deg) " +
         "rotateY(" + (-event.gamma) + "deg)";
 
       element.innerText =
-        "rotateZ(" + (event.alpha - 180) + "deg) " +
+        "rotateZ(" + (event.alpha) + "deg) " +
         "rotateX(" + event.beta + "deg) " +
         "rotateY(" + (-event.gamma) + "deg)";
     });
